@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mawa Hotel - Search Rooms</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Mawa Hotel</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search Rooms</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="darkModeToggle">Dark Mode</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <h2>Find Your Room</h2>
+            <div class="search-controls">
+                <select id="locationSelect">
+                    <option value="">Select a Location</option>
+                    <option value="Mile 1">Mile 1</option>
+                    <option value="Mile 2">Mile 2</option>
+                    <option value="Mile 3">Mile 3</option>
+                    <option value="Mile 4">Mile 4</option>
+                    <option value="Mile 5">Mile 5</option>
+                    <option value="Mile 6">Mile 6</option>
+                    </select>
+                <input type="text" id="roomSearchInput" placeholder="Search for rooms...">
+            </div>
+        </section>
+
+        <section class="room-listings">
+            <div id="roomListingsGrid" class="room-grid">
+                </div>
+            <p id="noRoomsMessage" style="display: none;">No rooms available for this selection.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mawa Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/data.js"></script>
+</body>
+</html>

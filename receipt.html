@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mawa Hotel - Booking Receipt</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header class="navbar">
+        <div class="container">
+            <h1 class="logo"><a href="index.html">Mawa Hotel</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="search.html">Search Rooms</a></li>
+                    <li><a href="booking.html">Book Now</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><button id="darkModeToggle">Dark Mode</button></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="receipt-section">
+            <h2>Booking Confirmation</h2>
+            <div id="receiptDetails" class="receipt-details">
+                <p><strong>Booking ID:</strong> <span id="receiptBookingId"></span></p>
+                <p><strong>Guest Name:</strong> <span id="receiptGuestName"></span></p>
+                <p><strong>Room Type:</strong> <span id="receiptRoomType"></span></p>
+                <p><strong>Location:</strong> <span id="receiptLocation"></span></p>
+                <p><strong>Check-in Date:</strong> <span id="receiptCheckIn"></span></p>
+                <p><strong>Check-out Date:</strong> <span id="receiptCheckOut"></span></p>
+                <p><strong>Number of Guests:</strong> <span id="receiptNumGuests"></span></p>
+                <p><strong>Total Paid:</strong> FCFA<span id="receiptTotalPaid"></span></p>
+            </div>
+            <button id="downloadPdfBtn" class="btn btn-secondary">Download PDF Receipt</button>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Mawa Hotel. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/receipt.js"></script>
+</body>
+</html>
